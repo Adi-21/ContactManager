@@ -89,7 +89,7 @@ const Editcontact = () => {
 
     return (
         <>
-        <ToastContainer />
+            <ToastContainer />
             {
                 loading ? <Spinner /> : <>
                     <section className="add-contact p-3">
@@ -122,7 +122,7 @@ const Editcontact = () => {
                                             <input required="true" name="company" value={contacts.company} onChange={updateInput} type="text" className="form-control" placeholder="Company" />
                                         </div>
                                         <div className="mb-2">
-                                            <select required="true" name="group" value={contacts.group} onChange={updateInput} className="form-control">
+                                            <select required="false" name="group" value={contacts.group} onChange={updateInput} className="form-control">
                                                 <option value="">Select a Group</option>
                                                 {
                                                     groups.length > 0 &&
