@@ -121,7 +121,7 @@ const Editcontact = () => {
                                         <div className="mb-2">
                                             <input required="true" name="company" value={contacts.company} onChange={updateInput} type="text" className="form-control" placeholder="Company" />
                                         </div>
-                                        {/* <div className="mb-2">
+                                        <div className="mb-2">
                                             <select required="false" name="group" value={contacts.group} onChange={updateInput} className="form-control">
                                                 <option value="">Select a Group</option>
                                                 {
@@ -133,7 +133,7 @@ const Editcontact = () => {
                                                     })
                                                 }
                                             </select>
-                                        </div> */}
+                                        </div>
                                         <div className="mb-2">
                                             <input type="submit" className="btn btn-primary" value="Update" />
                                             <Link to={`/`} className="btn  btn-dark ms-2">Cancel</Link>
